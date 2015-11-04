@@ -1,9 +1,13 @@
 {
-  "name": "hackathon-starter",
-  "version": "3.1.0",
+  "name": "thunderstorm",
+  "version": "0.0.1",
+  "author":"Trent Oswald (@therebelrobot) <trentoswald@therebelrobot.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "https://github.com/therebelrobot/thunderstorm.git"
+  },
+  "bin": {
+    "thunderstorm": "npm start"
   },
   "scripts": {
     "start": "node app.js",
