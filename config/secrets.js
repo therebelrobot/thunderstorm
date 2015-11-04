@@ -20,7 +20,6 @@
  */
 
 module.exports = {
-
   db: process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://localhost:27017/thunderstorm-local',
 
   sessionSecret: process.env.SESSION_SECRET || 'Your Session Secret goes here',
@@ -72,7 +71,7 @@ module.exports = {
 
   twitter: {
     consumerKey: process.env.TWITTER_KEY || '6NNBDyJ2TavL407A3lWxPFKBI',
-    consumerSecret: process.env.TWITTER_SECRET  || 'ZHaYyK3DQCqv49Z9ofsYdqiUgeoICyh6uoBgFfu7OeYC7wTQKa',
+    consumerSecret: process.env.TWITTER_SECRET || 'ZHaYyK3DQCqv49Z9ofsYdqiUgeoICyh6uoBgFfu7OeYC7wTQKa',
     callbackURL: '/auth/twitter/callback',
     passReqToCallback: true
   },
@@ -148,4 +147,4 @@ module.exports = {
     bitcoinNetwork: process.env.BITCORE_BITCOIN_NETWORK || 'testnet'
   }
 
-};
+}
