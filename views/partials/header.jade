@@ -10,17 +10,8 @@
         i.fa.fa-bolt
         | Thunderstorm
     .collapse.navbar-collapse
-      ul.nav.navbar-nav
-        if user
-          li(class=title=='Dashboard'?'active':undefined)
-            a(href='/dashboard') Dashboard
       ul.nav.navbar-nav.navbar-right
-        if !user
-          li(class=title=='Login'?'active':undefined)
-            a(href='/login') Login
-          li(class=title=='Create Account'?'active':undefined)
-            a(href='/signup') Create Account
-        else
+        if user
           li.dropdown(class=title=='Account Management'?'active':undefined)
             a.dropdown-toggle(href='#', data-toggle='dropdown')
               if user.profile.picture
