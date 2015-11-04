@@ -1,5 +1,6 @@
 {
   "name": "thunderstorm-ide",
+  "description": "WIP - An on-premise web-based development environment. Build on Node.js + Docker",
   "version": "0.0.1",
   "author":"Trent Oswald (@therebelrobot) <trentoswald@therebelrobot.com>",
   "repository": {
